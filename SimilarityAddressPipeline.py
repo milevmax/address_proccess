@@ -42,6 +42,7 @@ class AddressComparator:
             df = args[0]
             self._check_columns(df)
             self.df = df
+            self.char_processed = False
         elif isinstance(self.file_path, str):
             df = pd.read_csv(self.file_path)
             self._check_columns(df)
